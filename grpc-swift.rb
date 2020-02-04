@@ -10,8 +10,8 @@ class GrpcSwift < Formula
   depends_on "swift-protobuf"
 
   def install
-    system "make", "plugins"
-    bin.install ".build/release/protoc-gen-swiftgrpc"
+    system "swift", "build", "--disable-sandbox", "-c", "release", "--product", "protoc-gen-grpc-swift"
+    bin.install ".build/release/protoc-gen-grpc-swift"
   end
 
   test do
