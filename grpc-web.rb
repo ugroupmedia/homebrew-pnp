@@ -6,5 +6,4 @@ cask 'grpc-web' do
   name 'gRPC-Web'
   homepage 'https://github.com/grpc/grpc-web'
 
-  binary "protoc-gen-grpc-web", target: "protoc-gen-grpc-web-#{version}-darwin-x86_64"
 end
