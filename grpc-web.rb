@@ -6,4 +6,9 @@ cask 'grpc-web' do
   name 'gRPC-Web'
   homepage 'https://github.com/grpc/grpc-web'
 
+  installer script: {
+                      executable:   "/bin/chmod",
+                      args:         ['a+x', '/usr/local/bin/protoc-gen-grpc-web'],
+                      print_stderr: true
+                    }
 end
