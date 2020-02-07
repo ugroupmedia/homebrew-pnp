@@ -7,5 +7,5 @@ cask 'grpc-web' do
   homepage 'https://github.com/grpc/grpc-web'
 
   artifact "protoc-gen-grpc-web-#{version}-darwin-x86_64", target: "/usr/local/bin/protoc-gen-grpc-web"
-  set_permissions "/usr/local/bin/protoc-gen-grpc-web", '0755'
+  system "chmod", "a+x", "/usr/local/bin/protoc-gen-grpc-web"
 end
