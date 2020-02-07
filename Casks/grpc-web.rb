@@ -6,7 +6,7 @@ cask 'grpc-web' do
   name 'gRPC-Web'
   homepage 'https://github.com/grpc/grpc-web'
 
-  artifact "/usr/local/bin/protoc-gen-grpc-web", target: "protoc-gen-grpc-web-#{version}-darwin-x86_64"
+  binary "protoc-gen-grpc-web-#{version}-darwin-x86_64", target: "protoc-gen-grpc-web"
 
   postflight do
     set_permissions "protoc-gen-grpc-web-#{version}-darwin-x86_64", '0755'
