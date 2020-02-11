@@ -6,9 +6,9 @@ cask 'grpc-java' do
   name 'grpc-java'
   homepage 'https://github.com/grpc/grpc-java'
 
-  binary "protoc-gen-grpc-java-#{version}-osx-x86_64.exe", target: "protoc-gen-grpc-java"
+  #binary "protoc-gen-grpc-java-#{version}-osx-x86_64.exe", target: "protoc-gen-grpc-java"
 
-  postflight do
-    set_permissions "protoc-gen-grpc-java-#{version}-osx-x86_64.exe", '0755'
-  end
+  #postflight do
+  #  set_permissions "protoc-gen-grpc-java-#{version}-osx-x86_64.exe", '0755'
+  #end
 end
