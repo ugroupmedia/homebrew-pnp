@@ -1,9 +1,9 @@
 class GrpcSwift < Formula
   desc "The Swift language implementation of gRPC"
   homepage "https://github.com/grpc/grpc-swift"
-  #url "https://github.com/grpc/grpc-swift/archive/0.9.1.tar.gz"
-  #sha256 "6b3a2ed13c805c6b8f339f558f2a1372bdcf84c079c104a6d0b54fd7650b8fbf"
-  head "https://github.com/grpc/grpc-swift.git", :revision => "5f40a43567495b534dd445e6dd60181dff5a28d6"
+  url "https://github.com/grpc/grpc-swift/archive/1.0.0-alpha.10.tar.gz"
+  sha256 "ba0d33f11b0c18a3791e821696542dfd6e3f239f47db6a801ccfb4842fa766bc"
+  # head "https://github.com/grpc/grpc-swift.git", :revision => "5f40a43567495b534dd445e6dd60181dff5a28d6"
 
   depends_on :xcode => ["10.0", :build]
   depends_on "protobuf"
