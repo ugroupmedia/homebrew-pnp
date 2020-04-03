@@ -10,8 +10,7 @@ class PhpGrpc < Formula
   depends_on "grpc"
 
   def install
-    system "go", "get"
     system "./build.sh", "Mac"
-    bin.install "cmd/protoc-gen-php-grpc/protoc-gen-php-grpc"
+    bin.install "protoc-gen-php-grpc"
   end
 end
