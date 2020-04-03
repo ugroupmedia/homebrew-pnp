@@ -13,6 +13,6 @@ class PhpGrpc < Formula
     system "cd", "cmd/protoc-gen-php-grpc"
     system "go", "get"
     system "go", "build"
-    bin.install "protoc-gen-php-grpc"
+    bin.install "cmd/protoc-gen-php-grpc/protoc-gen-php-grpc"
   end
 end
