@@ -2,7 +2,7 @@ class GrpcWeb < Formula
   desc "gRPC-Web provides a JavaScript library that lets browser clients access a gRPC service."
   homepage "https://github.com/grpc/grpc-web"
   url "https://github.com/grpc/grpc-web.git",
-      :tag      => "1.2.0"
+      :tag      => "1.2.1"
   head "https://github.com/grpc/grpc-web.git"
 
   depends_on "protobuf"
