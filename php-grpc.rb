@@ -2,7 +2,7 @@ class PhpGrpc < Formula
   desc "Fast and furious GRPC server for PHP applications"
   homepage "https://github.com/spiral/php-grpc"
   url "https://github.com/spiral/php-grpc.git",
-      :tag      => "v1.2.0"
+      :tag      => "v1.4.2"
   head "https://github.com/protocolbuffers/protobuf.git"
 
   depends_on "go"
@@ -10,8 +10,8 @@ class PhpGrpc < Formula
   depends_on "grpc"
 
   patch do
-    url "https://github.com/supersmile2009/php-grpc/commit/dab727e8a5fe96a46378a0f459ce4d7893ab8aae.patch"
-    sha256 "7b61d18a858a8e90a94ace0244861d511d7240c29d766c3f0db40e2c8a16e8f6"
+    url "https://github.com/ugroupmedia/homebrew-pnp/patches/php-grpc-1.4.2_dab727e8a5fe96a46378a0f459ce4d7893ab8aae.patch"
+    sha256 "c1b7da64d90f0533967b7126ba9bd2a126d8b65fa8d3a5f0a8fb4ca8f7667f0e"
   end
 
   def install
