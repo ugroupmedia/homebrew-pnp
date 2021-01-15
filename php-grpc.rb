@@ -10,7 +10,7 @@ class PhpGrpc < Formula
   depends_on "grpc"
 
   patch do
-    url "https://github.com/ugroupmedia/homebrew-pnp/blob/master/patches/php-grpc-1.4.2_dab727e8a5fe96a46378a0f459ce4d7893ab8aae.patch"
+    url "https://github.com/ugroupmedia/homebrew-pnp/patches/php-grpc-1.4.2_dab727e8a5fe96a46378a0f459ce4d7893ab8aae.patch"
     sha256 "c1b7da64d90f0533967b7126ba9bd2a126d8b65fa8d3a5f0a8fb4ca8f7667f0e"
   end
 
