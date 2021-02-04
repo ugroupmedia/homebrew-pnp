@@ -2,7 +2,7 @@ class GrpcSwift < Formula
   desc "The Swift language implementation of gRPC"
   homepage "https://github.com/grpc/grpc-swift"
   url "https://github.com/grpc/grpc-swift.git",
-      :tag      => "1.0.0-alpha.24"
+      :tag      => "1.0.0"
   head "https://github.com/grpc/grpc-swift.git"
 
   depends_on :xcode => ["10.0", :build]
