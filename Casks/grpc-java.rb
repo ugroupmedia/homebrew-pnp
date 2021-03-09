@@ -6,7 +6,7 @@ cask 'grpc-java' do
   name 'grpc-java'
   homepage 'https://github.com/grpc/grpc-java'
 
-  binary "#{prefix}/protoc-gen-grpc-java-#{version}-osx-x86_64.exe", target: "protoc-gen-grpc-java"
+  binary "#{appdir}/protoc-gen-grpc-java-#{version}-osx-x86_64.exe", target: "protoc-gen-grpc-java"
 
   postflight do
     set_permissions "remotecontent", '0755'
