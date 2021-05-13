@@ -1,6 +1,6 @@
 cask 'grpc-java' do
   version '1.37.0'
-  sha256 'e57ecb1064ac0b6f308eefdd879cb669f2e7c79d3c6241db0b6c70947be800d6'
+  sha256 '3c338ed678e804ca084733b4d84e66180fbf771d60810d50339d3cf68a0b2f2a'
 
   url "https://search.maven.org/remotecontent?filepath=io/grpc/protoc-gen-grpc-java/#{version}/protoc-gen-grpc-java-#{version}-osx-x86_64.exe"
   name 'grpc-java'
