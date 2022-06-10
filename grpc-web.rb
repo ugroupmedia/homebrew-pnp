@@ -10,6 +10,6 @@ class GrpcWeb < Formula
 
   def install
     system "make plugin"
-    bin.install "./javascript/net/grpc/web/protoc-gen-grpc-web"
+    bin.install "./javascript/net/grpc/web/generator/protoc-gen-grpc-web"
   end
 end
