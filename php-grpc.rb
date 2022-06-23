@@ -10,8 +10,8 @@ class PhpGrpc < Formula
   depends_on "grpc"
 
   patch do
-    url "https://raw.githubusercontent.com/ugroupmedia/homebrew-pnp/master/patches/php-grpc-1.6.0_69cfc4c11c638acbfdb97771cf7d39c251bc81aa.patch"
-    sha256 "cd8c579209497219c9cf3d18c2467bc39d642f2c0b6761b3395d2cabeef9c256"
+    url "https://raw.githubusercontent.com/ugroupmedia/homebrew-pnp/master/patches/php-grpc-1.6.0_f7d9b477a6ae743d6fdc18dbfde0a4da0b3e6350.patch"
+    sha256 "d68cf637c544b37b51a0422e77372d422796d3c69cd1d27f919dd1b1b3c2174f"
   end
 
   def install

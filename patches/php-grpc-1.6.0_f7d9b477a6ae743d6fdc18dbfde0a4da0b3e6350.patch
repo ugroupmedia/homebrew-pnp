@@ -120,7 +120,7 @@ index 0000000..3607dee
 +{{if $ns.Namespace}}
 +namespace {{ $ns.Namespace }};
 +{{end}}
-+use Spiral\RoadRunner\GRPC;
++use Spiral\GRPC;
 +{{- range $n := $ns.Import}}
 +use {{ $n }};
 +{{- end}}
@@ -174,7 +174,7 @@ index 0000000..3607dee
 +
 +	tpl := template.Must(template.New("phpBody").Funcs(template.FuncMap{
 +		"interface": func(name *string) string {
-+			return identifier(*name, "interface")
++			return identifier(*name, "MethodInterface")
 +		},
 +		"name": func(ns *ns, name *string) string {
 +			return ns.resolve(name)
