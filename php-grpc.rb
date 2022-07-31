@@ -5,7 +5,6 @@ class PhpGrpc < Formula
       :tag      => "v1.6.0"
   head "https://github.com/protocolbuffers/protobuf.git"
 
-  depends_on "go"
   depends_on "protobuf"
   depends_on "grpc"
 
