@@ -14,7 +14,6 @@ class PhpGrpc < Formula
   end
 
   def install
-    system "go", "mod", "tidy"
     system "go", "mod", "vendor"
     system "./build.sh", "Mac"
     bin.install "protoc-gen-php-grpc"
