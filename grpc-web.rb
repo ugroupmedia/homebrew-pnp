@@ -9,8 +9,7 @@ class GrpcWeb < Formula
   depends_on "grpc"
 
   def install
-    system "sed -i '' 's/CMAKE_CXX_STANDARD 11/CMAKE_CXX_STANDARD 14/g' third_party/protobuf/cmake/CMakeLists.txt third_party/protobuf/third_party/googletest/CMakeLists.txt"
-    system "make plugin"
+    system "make -DCMAKE_CXX_STANDARD=14 plugin"
     bin.install "./javascript/net/grpc/web/generator/protoc-gen-grpc-web"
   end
 end
