@@ -9,7 +9,7 @@ class GrpcWeb < Formula
   depends_on "grpc"
 
   def install
-    system "CMAKE_CXX_STANDARD=14 make plugin"
+    system "CXXFLAGS=-std=c++14 make plugin"
     bin.install "./javascript/net/grpc/web/generator/protoc-gen-grpc-web"
   end
 end
